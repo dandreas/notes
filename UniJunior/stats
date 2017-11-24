@@ -1,0 +1,255 @@
+The arithmetic mean of a variable is computed by determining the
+    sum of all the valued of the variable in the data set,
+    divided by the number of observations in that data set.
+
+The Population Mean (mew): is computed using all the individuals in the population.
+(mew) = the summation of X(i) / N
+X(i) = the data value observed in the i^th position
+N    = the population total
+                 _
+The Sample Mean, x (x-bar)
+x-bar = the summation of X(i)/n
+X(i) = the data value in the i^th position
+n    = the sample size
+
+The median of a variable is the value that lies in the middle of the data when
+    it is arranged in ascending order. (eg. half of the data are bbelow the median and half are above the median.
+M = (N + 1)/2 # This gives the index of the median
+
+The mode of a variable is the most frequent observation that occurs in the data set
+
+Population variance: the sum of the squares about the population mean divided by the number of observations in the population, N.
+    Calculation: The summation of (X(i)-(mew))^2/N
+        also: (summation of x(i)^2 - (summation x(i))^2 / N) / N
+    Note: do not round until the last computation
+
+Population Standard Deviation: sqrt(Population variance)
+
+Sample variance
+
+S^2 = (summation(x(i)^2) - ((summation(x(i))^2)/n))/(n-1)
+
+
+
+
+Chapter 4: Basic Concepts of Probability
+
+main objective: develop a sound understanding of probability values since that is the foundation on which methods of inferential statistics build.
+
+Probablility: A measure of the likelihood of a random phenomenon or chance behavior
+    Describes the long term proportion which a certain outcome will occur situations with short-term uncertainty
+Relative frequency approximation of probability:
+P(A) = # of times A occured / # of times the procedure was repeated
+
+Event: any collection of results or outcomes of a procedure
+
+Simple Event: an outcome or an event that cannot be broken down to a simpler component.
+
+Sample Space: The sample space for a procedure consists of all possible simple events
+    Cannot be broken down
+
+Classical Approach to Probability:
+    Requires that every possible outcome is equally likely to occur
+    Assumes that a procedure has a defined Sample Space (S) of all possible outcomes that cannot be broken down (ie. simple events) and that each of those simple events has an equally likely chance of occuring
+    P(A) = # of ways A can occur / # of possible outcomes(sample space.size())
+    also:
+    P(A) = Number(A) / Number(S)
+
+Rules of Probability:
+1. The probability of an event, A, must be greater than or equal to 0, and less than or equal to 1
+2. The sum of the probabilities of all the possible outcomes of the experiment must equal 1.
+
+Round off Rules for Probability: Give probabilities in a decimal form and use 3 significant digits when availabe.
+
+The Frequency Probability wil get closer to the Classical Probability as the number of trials of the experiment increase.
+
+Subjective Probability Method: The probability of an event A is a probability obtained on the basis of personal judgement or is estimate by using knowledge of the relevant circumstances.
+
+An unlikely event is an event whose probability is very small, such as .05 or less.
+
+The complement of an event A, denoted by (bar)A, A consists of all outcomes in which event A does NOT occur
+
+A Compound Event: any event is combining two or more simple events
+
+Two events are disjoint (Mutually exclusive) if they cannot occur at the same time
+    Disjoint events do not overlap
+
+Formal Addition rule: P(A or B) = P(A) + P(B) - P(A & B)
+    where P(A & B) denotes the probability that a & B both occur at the same time as an outcome in a trial of an experiment
+
+Multiplicative Rule:
+Notations: P(A and B) = P(event A occurs in a first trial of the experiment and event B occurs in a second trial)
+
+P(B|A) = represents the probability of event B occuring after event A has already occurred.
+
+Formal Rule for multiplication:
+P(A and B) = P(A) * P(B|A)
+
+if the P(B|A) = P(B) then the events A and B are said to be independent
+
+Conditional Probability of an event: The probability obtained with the additional information that some other event has already occurred
+    P(B|A) = P(A&B) / P(A)
+    There is an example for this: EX1 (ln1)
+Combination = order of numbers does not matter
+Permutations = order matters
+
+
+
+CH 5
+Discrete Random Variable: a collection of value that is finite or countable.
+    (if there are infintely many values, the number of values is countable if it is possible to count them individually (stars) such as the number of tosses of a coin before getting a tails
+
+Discrete random variable: can be plotted on a number line with space between each point!
+
+Continuous Random Variable: infinity many values, and the collection of values is not countable
+    Tip: The values of a continuous rv can be plotted on a number line in an uninterrupted interval fashion
+
+Probability Distribution of a discrete RV
+    X provides the possible values of th RV and their corresponding probabilities
+    The probability distribution can be in the form of a table, graph, or mathematical formula.
+    3 Requirements:
+        1. There are RV X and its values are associated with corresponding probabilities for every x possible, there is a P(x)
+        2. All probabilities of each x must be between 0 and 1
+        3. The sum of all probabilities of all the possible x's must = 1
+
+        summation(P(x)) = 1
+    There is an example for this: EX2 (ln 11)
+
+Probability Histogram: a histogram in which the horizontal axis corresponds to the value of RV and vertical axis represents the probability of each of the values of the RV
+
+The mean of a probability Distribution of a discrete RV is (mew) and the variance is (sigma)^2
+    (mew) = summation(x^2 * P(x)) - (mew)^2
+        round to 1 decimal more than the values of x, unless you need more decimals to get to 1 significant figure
+
+Expected Value: (of a discrete rand var) is the average value you would expect to get after conducting the experiment many times
+
+5.3 The Binomial Probability Distribution: A special discrete Probability distribution, it results from a procedure that meets all of the folowing requirements.
+    1. The procedure has a fixed number of trials
+    2. The trials are independent
+    3. Each trial has an outcome in one of two disjoint categories that are referred to as: Success or Failure.
+        3.1. They cannot overlap!
+    4. The probability of success remains the same in each trial
+
+Probability distribution notation:
+    x = the specific number of successes
+    M = the fixed number of trials
+    p = the probability of a successful outcome
+    q = the probability of a falure = 1 - p
+
+Probability density function is an equasion used to compute prrobabilities of continuous random variables that must satisfy the following 2 properties
+    1. The total area under the graph of the equasion over all possible values of the random variable = 1
+    2. The height of the graph of the equasion must be >= 0 for all possible values of the random variable
+Uniform Probability distributions: (flipping a coin, all probabilities are the same)
+
+Since continuous rvs have an infinite amount of possible outcomes, it is reasonable that observing a particular value would have the probability of 0
+
+It is impossible to write a valid probability model for a continuous rv because you cannot compute the probability of all the infinite possible outcomes
+
+6.7 on separate sheet!
+
+discrete r.v. = create a range of the x value
+ex:32
+
+p of success = p
+p(hat) is the estimate of a proportion
+
+mew(p-hat) = mew = n*p
+sigma(p-hat)^2 = p*q/n
+
+Point Estimate: the sample proportion, p-hat, is the best point estimate(a single value estimate) of the population's true proportion.
+    A single value or point used to approximate a population parameter:
+        xbar is an estimate for mew
+        S^2 is an estimate for sigma^2
+        phat is an estimate for p
+
+Confidence Interval: We can use a sample proportion to construct a confidence interval estimate of the true value of a population proportion. (CI)
+    Is a range of values used to estimate the true value of a population parameter
+
+Confidence level(degree of confidence): the probability 1 - <>< (such as .95 or 95%) that the confidence intervale actually does contain the population parameter assuming that the estimation process is repeated a large number of times
+
+another sampling distribution is a rv called sample proportion, p-hat.
+Suppose a random sample of size n is obtained from a population in which individual either does or does not have a certain characteristic
+    p-hat is a random variable with mean(phat) of p and sigma(phat) of sqrt((p*q)/n)
+
+Inferential Stats: the process of using information obtained in a sample and generalizing it to an entire population
+
+Estimation: sample data is used to estimate the value of unknown parameters such as mew and p.
+
+Hypthesis testing: claims regarding a characteristic of one or more populations are made and sample data are used to test the claims
+
+The information collected from a sample does not contain all of the information in a population
+    so we will assign probabilities to our estimates.
+    These probabilities serve as a way of measuring what will happen if we estimate the value of the parameter many times and provide a measure of confidence in our results
+
+Point estimates: a value of statistics that estimates the value of a parameter
+    ex./ The sample mean x(bar) is a point estimate of the population mean, mew.
+    ex./ the sample proportion phat is a point estimate of pop proportion P
+
+The confidence Interval (CI) for an unknown paramenter consists of an interval of numbers
+The level of confidence represents the expected number of intervals that will contain the parameter if a large number of different samples is obtained. the level of confidence is denoted by (1-<><) * 1
+CI estimates for the population mean are of the form:
+    point estimate +/- margin of error
+The margin of error of a CI estimate of a parameter depends on 3 factors:
+    1. level of confidence (as this goes up, the margin of error goes up)
+    2. Sample size(n)      (as this goes up, the margin of error goes down)
+    3. Standard Deviation  (as this goes up, the margin of error goes up)
+
+
+
+<POST THANKSGIVING BREAK REVIEW>
+We have learned that x-bar is an unbiased best point estimate for the true population mean, mew. We have also learned that phat is an unbiased best poit estimate for the population proportion, p.
+This means that we can approximate probabilities with the standard Normal curve for both xbar and phat.
+
+If we take many samples from the same population and estimate a confidence interval for the true population parameter, mew or p, (1-<><)100% confidence level. then (1-<><)100% of those confidence intervals we found would actually contain the true value of the population parameter, and <>< * 100% of them would not
+    Say <>< = .05
+    then 1-<>< = 1-.05=.95
+
+    Therefore: 95% confidence that range values contained the true population parameter
+
+The Standard Normal Distribution i a special normal distribution
+    It has a Mew of 0 and a sigma(sd) of 1. thus, we use the standardized random variable Z when finding area under the curve.
+
+Critical Value: the number on the borderline separating sample statistics that are likely to occur from those that are unlikely to occur. The number Z(<></2) is a critical value that is a zscore with the property that it separates an area under the curve of <></2 in the right tail of the standard normal distribution.
+Since the Standard Normal Curve is symmetric, a -Z(<></2) separates an area of <></2 in the left tail of the standard normal distribution
+
+In order to build a confidence interval, we need the point estimate statistic, xbar or phat, and their corresponding margin of error such that our CI is made by subtracting and adding the margin of error
+    (phat +/- margin of error, xbar +/- margin of error, xbar - margin of error<mew<xbar + margin of error)
+
+Margin of error symbol: E
+
+When data from a simple random sample are used to estimate a population parameter (like mew or p) the margin of error, denoted by E, is the maximum likely difference (with probability 1-<>< such as .95) between the observed sample statistic, xbar or phat, and the true value of their population parameter (mew or p)
+    The margin of error (E) is also called the maximum error of the estimate and can be found by multiplying the critical value and the standard deviation of the sample statistic xbar or phat
+    So, a confidence interval at (1-<><)100% can be found by the following formula(for p):
+        phat +/- Z(<></2) * sqrt(phat*qhat/n)
+    A confidence interval for mew at (1-<><)100%:
+        xbar +/- Z(<></2) * sigma/sqrt(n)
+
+(fri 120916) 2
+
+Four outcomes from hypothesis testing
+    1. Reject H(not) when H1 is true (Correct outcome)
+    2. Do not reject H(not) when H(not) really is true (Correct outcome)
+    3. Reject H(not) when H(not) is true (Type 1 error)
+    4. Do not reject H(not) when H1 is true (Type 2 error)
+
+When we gave a confidence interval we could not guarentee our population parameter was contained within that interval but we did give a level of confidence to the interval for the real population value. If we wanted a higher confidence, we made the interval wider. Well we also don't know for sure if the results of our hypothesis testing is in error or not
+
+
+Methods for hypothesis testing:
+(Pop mean, mew)
+Assume we know the populations standard deviation, sigma
+when observed results are unlikely undeer the assumption that the null hypothesis is true, we say the result is
+Statistically Significant. When results are found to be statistically significant, we reject the null hypothesis, h(not). We can say that we have sufficient evidence to reject h(not).
+<><(alpha) = level of significance
+
+Classical Method
+the mean from the sample, xbar, is too many standard deviations away from the mean stated in the null hypothesis, we reject the null hypothesis, hnot.
+State the # of st. deviations away before you do the test
+P-value approach
+Assuming hnot is true, if the probability of getting a sample mean as extreme or more extreme than <>< occurs, we reject the null hypothesis
+
+Confidence intervals
+When testing a 2-tailed test, we reject the null hypothesis, hnot, when the mew-not value is not contained within our confidence interval range of values.
+(_- xbar + _)
+
+Z = x-bar - mew-not / ( sigma/sqrt(n) ) .02

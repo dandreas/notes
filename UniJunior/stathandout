@@ -1,0 +1,14 @@
+A = .0035 (color left)
+B = .1685 (color left)
+C = .9987 (color left)
+D = 1 - .8413 = .1587 (color right)
+E = 1 - .9554 = .0446 (color right)
+F = 1 - .0013 - (1 - .9515) = .9987 - .0485 = .9502 (color right)
+G = .0505 - .0495 = .0010/2 = .0005 - 0500 = .0500 (color left)
+
+I = 
+(bell curve)
+(middle is mean, +/- sigma for the different parts)
+234-250-266-282-298
+-2 - 1 - 0 + 1 + 2
+(figure it out from there)

@@ -1,0 +1,73 @@
+EX1:Conditional Probability of an event:
+Marital Status  | Males | Females   | Total
+Never married   | 28.6  | 23.3      | 51.9
+Married         | 62.1  | 62.8      | 124.9
+Widowed         | 2.7   | 11.3      | 14.0
+Divorced        | 9.0   | 12.7      | 21.7
+Total           | 102.4 | 110.1     | 212.5
+
+P(Female|Widowed) = P(Female & Widowed) = 14/212.5 / P(Female) = 110.1/212.5 == 0.1272
+
+EX2:Probability Distribution of a Discrete Random Variable
+
+X       P(X)
+------------
+0   |   .2
+1   |   .2
+2   |   .2
+3   |   .2
+4   |   .2
+Tot |   1.0 
+
+Q: is this a probability distribution of a discrete rv?
+A: Yes, P(X) total equals 1
+
+x   px      xP(x)   x^2 x^2-P(x)
+0   .035    0       0   0
+1   .074    .074    1   .074
+2   .197    .394    4   .788
+3   .320    .960    9   2.88
+4   .374    1.496   16  5.984
+
+6.7 Example (using a discrete r.v.)
+
+x = 7
+p(x=7), p(7-5<= x <= 7+5)=p(6.5<=x<=7.5)
+M = 3
+st = 1
+p((6.5-3)/1 <= Z <= (7.5-3)/1)
+
+6.7 Example 2
+P. According to an almanac 6% of the human population has type O-negative blood type.
+Q. What is the probability that is a simple random sample of 500, fewer than 25 have type o-neg?
+Solution:
+Binomial success is an O-neg bloodtype
+p(success) = .06 = p
+n = 500
+failure = 1-.06 = .94 = q
+p(x < 25)
+n*p*q = 28.2 (Yes, use normal approximation)
+M = 30
+sd = sqrt(sd^2) = sqrt(npq) = sqrt(28.2) = 5.31
+Z = (24.5 - 30)/5.31 = -1.04
+p(z<-1.04)
+ANS= .1492 (put -1.04 on a graph, and compute from -1.04 to -infinity using graph)
+
+6.7 Example 3
+p(z>= 39.5-m/sigma)
+2. (no idea)
+3. p(7.5-M/sigma<=Z<=8.5-M/sigma)
+4. 11.5&12.5
+5. 17.5&24.5
+6. n = 60, p = .4, q = .6
+    if (npq >=5) you can approximate with normal distribution
+    npq = 14.4 = sigma^2
+    sigma = 3.795
+    M = np = 24
+    p((19.5-24)/3.795<= Z <= 20.5-24/3.795)
+    p(-1.19 <= Z <= -.92) (use table)
+7. cant do it
+8 .0220
+
+7 Example
+a 95% level of confidence (<>< = .05) implies that if 100 different CI are constructed, each based on a different sample from the same population we will expect 95 of the intervals to include the true parameter and 5 to not include the true parameter

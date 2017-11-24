@@ -1,0 +1,45 @@
+For the test:
+Aperature:      f/2     2.8     4       5.6     8       11      16      22      32
+How wide open the lens is (big to small O to o)
+Less in focus > more in focus
+Brighter > Darker
+Shutter Speed:  1.2s    1/4     1/8     1/15    1/30    1/60    1/125   1/250   1/500
+How long the shutter is open
+Slow(blur) > Fast(stop action)
+Brighter > Darker
+ISO:            100     200     400     800     1600    3200    6400    12800   25600
+Sensitivity to light
+Crisp > Grainy
+Brighter > Darker
+
+Depth of Field:
+    Aperature (Higher aperature, more depth of field)
+    Camera to subject distance
+    Focal length (length of the lens)
+
+Jpeg vs RAW
+    jpegs are smaller (4x)
+    raw are easier to edit
+    jpegs are toned by default (usually)
+    raws are not, which makes them easier to edit
+
+sRGB vs AdobeRGB
+    They are colour profiles
+    safest bet: sRGB
+        it's widely supported
+
+    AdobeRGB has a larger colour profile
+    if you shoot in AdobeRGB, and you don't convert it to sRGB in photoshop before publishing it, the photo will look washed out
+    it's used for professional prints to get better pictures
+
+Histogram
+    A graphical representation of all of the pixels in your photograph
+    (the indicator on the camera is an easy-to-read histogram)
+
+Digital workflow
+    Be organized
+        Sort photographs on your computer by year/date/shoot
+    When you're removing pictures off of your camera, make sure to format your card from the camera
+        this makes your sd cards last longer
+    Backup your photos!
+
